@@ -2,7 +2,11 @@
 Light html generator
 # Install
 ```bash
-    pip3 install git+https://github.com/GrafLearnt/HTMLight.git
+poetry add git+https://github.com/GrafLearnt/HTMLight.git
+```
+#### or
+```bash
+pip3 install git+https://github.com/GrafLearnt/HTMLight.git
 ```
 
 ## Disclaimer
