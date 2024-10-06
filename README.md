@@ -2,6 +2,10 @@
 Light html generator
 # Install
 ```bash
+pip3 install htmlight
+```
+#### or
+```bash
 poetry add git+https://github.com/GrafLearnt/HTMLight.git
 ```
 #### or
