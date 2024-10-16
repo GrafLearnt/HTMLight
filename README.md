@@ -1,4 +1,4 @@
-[![Upload Python Package](https://github.com/GrafLearnt/HTMLight/actions/workflows/python-publish.yml/badge.svg)](https://github.com/GrafLearnt/HTMLight/actions/workflows/python-publish.yml)
+[![Upload Python Package](https://github.com/GrafLearnt/HTMLight/actions/workflows/python-publish.yml/badge.svg)](https://github.com/GrafLearnt/HTMLight/actions/workflows/python-publish.yml) ![PyPI version](https://badge.fury.io/py/HTMLight.svg) ![Python Versions](https://img.shields.io/pypi/pyversions/HTMLight.svg) [![HTMLight](https://snyk.io/advisor/python/HTMLight/badge.svg)](/advisor/python/HTMLight)
 # Abstract
 Light html generator
 # Install
