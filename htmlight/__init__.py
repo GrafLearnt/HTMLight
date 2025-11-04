@@ -1,6 +1,5 @@
-from functools import lru_cache, partial
+from functools import partial
 from typing import Callable, Union
-
 
 __all__ = ["h"]
 
@@ -19,8 +18,7 @@ def build(name: str, /, *content: str, attributes: Union[dict[str, str], str, No
 
 
 class H:
-    @lru_cache
-    def __getattr__(self, name: str) -> Callable[..., str]:
+    def __getattribute__(self, name: str) -> Callable[..., str]:
         return partial(build, name)
 
 
