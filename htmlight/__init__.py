@@ -1,13 +1,11 @@
 from functools import partial
-from typing import Callable, Union
+from typing import Callable
 
 __all__ = ["h"]
 
 
-def build(name: str, /, *content: str, attributes: Union[dict[str, str], str, None] = None) -> str:
-    if isinstance(attributes, str):
-        attrs = " " + attributes
-    elif attributes:
+def build(name: str, /, *content: str, **attributes: str) -> str:
+    if attributes:
         attrs = " " + " ".join([f'{k}="{v}"' for k, v in attributes.items()])
     else:
         attrs = ""

@@ -51,63 +51,58 @@ from htmlight import h
 landing_page = h.html(
     h.head(
         h.title("Welcome to Our Website"),
-        h.link(attributes={"rel": "stylesheet", "href": "styles.css"}),
+        h.link(rel="stylesheet", href="styles.css"),
     ),
     h.body(
         h.header(
             h.h1(
                 "Welcome to Our Website",
-                attributes={
-                    "style": (
-                        " color:"
-                        " #333;"
-                        " text-align:"
-                        " center;"
-                        " background-color:"
-                        " #F0F0F0;"
-                        " padding: 20px;"
-                    )
-                },
+                style=(
+                    " color:"
+                    " #333;"
+                    " text-align:"
+                    " center;"
+                    " background-color:"
+                    " #F0F0F0;"
+                    " padding: 20px;"
+                ),
             ),
             h.p(
-                "Explore our amazing content", attributes={"style": "font-size: 20px; color: #555;"}
+                "Explore our amazing content",
+                style="font-size: 20px; color: #555;",
             ),
         ),
         h.main(
-            h.h2("Featured Articles", attributes={"style": "color: #444; text-align: center;"}),
+            h.h2("Featured Articles", style="color: #444; text-align: center;"),
             h.article(
-                h.h3("Article 1", attributes={"style": "color: #0072d6;"}),
-                h.p("This is the first article content", attributes={"style": "color: #666;"}),
+                h.h3("Article 1", style="color: #0072d6;"),
+                h.p("This is the first article content", style="color: #666;"),
             ),
             h.article(
-                h.h3("Article 2", attributes={"style": "color: #00a86b;"}),
-                h.p("This is the second article content", attributes={"style": "color: #666;"}),
+                h.h3("Article 2", style="color: #00a86b;"),
+                h.p("This is the second article content", style="color: #666;"),
             ),
         ),
         h.footer(
             h.p(
                 "© 2023 Our Website",
-                attributes={
-                    "style": (
-                        "text-align: center;"
-                        " background-color: #333;"
-                        " color: #fff;"
-                        " padding: 10px;"
-                        " flex-shrink: 0;"
-                        " background-color: #333;"
-                        " position: absolute;"
-                        " left: 0;"
-                        " bottom: 0;"
-                        " width: 100%;"
-                        " overflow: hidden;"
-                    )
-                },
+                style=(
+                    "text-align: center;"
+                    " background-color: #333;"
+                    " color: #fff;"
+                    " padding: 10px;"
+                    " flex-shrink: 0;"
+                    " background-color: #333;"
+                    " position: absolute;"
+                    " left: 0;"
+                    " bottom: 0;"
+                    " width: 100%;"
+                    " overflow: hidden;"
+                ),
             ),
         ),
     ),
-    attributes={
-        "style": "background-color: #f2f2f2; font-family: Arial, sans-serif;",
-    },
+    style="background-color: #f2f2f2; font-family: Arial, sans-serif;",
 )
 
 with open("landing_page.html", "w") as f:
